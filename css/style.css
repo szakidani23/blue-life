@@ -54,7 +54,7 @@
 /* Our Purpose */
 .ourpurpose {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(src/images/gallery_images/blue_facepaint.webp);
+    url(../src/images/gallery_images/blue_facepaint.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
