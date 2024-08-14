@@ -67,7 +67,7 @@
 /* Ignite The Torches */
 .ignite {
   background-image: linear-gradient(to bottom, #020b0f 0%, #043852ea 100%),
-    url(src/images/no_bg/blue_smoke.webp);
+    url(../src/images/no_bg/blue_smoke.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -154,7 +154,7 @@ footer a:hover {
 
 /* UP BTN */
 .stickyBtn {
-  display: hidden;
+  display: none;
   padding: 0.6rem;
   background: var(--maincolor);
   right: 1rem;
@@ -164,6 +164,7 @@ footer a:hover {
 @media screen and (max-width: 800px) {
   .stickyBtn {
     display: block;
+    z-index: 999;
   }
 }
 
