@@ -16,6 +16,10 @@
   transition: all 0.16s ease;
 }
 
+.btnReadMore {
+  display: none;
+}
+
 .textclamp {
   overflow: hidden;
   -webkit-box-orient: vertical;
@@ -25,6 +29,10 @@
 @media screen and (max-width: 800px) {
   .textclamp {
     display: -webkit-box;
+  }
+
+  .btnReadMore {
+    display: block;
   }
 }
 /* Is It Cool To Be Blue? SECTION */
