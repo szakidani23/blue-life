@@ -12,6 +12,21 @@
   max-width: 100%;
 }
 
+.revolution-reimagined-text {
+  transition: all 0.16s ease;
+}
+
+.textclamp {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+@media screen and (max-width: 800px) {
+  .textclamp {
+    display: -webkit-box;
+  }
+}
 /* Is It Cool To Be Blue? SECTION */
 .dimension {
   max-width: 500px;

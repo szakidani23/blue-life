@@ -14,8 +14,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/base.css" />
     <link rel="shortcut icon" href="src/images/icon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,18 +37,20 @@
   </head>
   <body id="toTop">
     <!-- UP BUTTON -->
-   <a href="#toTop">
-    <button class="btn btn-sm btn-up position-fixed bottom-0 stickyBtn">
-      <i class="bi bi-arrow-up-short fs-4"></i>
-    </button>
-   </a> 
+    <a href="#toTop">
+      <button class="btn btn-sm btn-up position-fixed bottom-0 stickyBtn">
+        <i class="bi bi-arrow-up-short fs-4"></i>
+      </button>
+    </a>
     <!-- HERO SECTION -->
     <header
       id="birdsBg"
       class="hero vh-100 d-flex justify-content-center small-screen-height align-items-start align-items-md-center pt-5 pt-md-0 mt-5 mt-md-0"
     >
       <div class="titleDiv text-center">
-        <h1 class="text-uppercase display-1 fw-medium fade-in">the blue revolution</h1>
+        <h1 class="text-uppercase display-1 fw-medium fade-in">
+          the blue revolution
+        </h1>
         <h5 class="my-3 display-5 fw-normal fst-italic fade-in">
           Unleash the Power of Change
         </h5>
@@ -70,32 +72,60 @@
             />
           </div>
           <div class="col-md-7">
-            <h3 class="display-3 fw-medium fade-in">Revolution Reimagined</h3>
-          
-            <p class="fs-6 fw-light lh-base mt-4 letter-spacing-md text-wrap">
-             <h4 class="fw-light fade-in"><i class="bi bi-pen"></i> Rewriting the Future Together</h4>
+            <h3 class="display-3 fw-medium fade-in mb-4">
+              Revolution Reimagined
+            </h3>
+
+            <h4 class="fw-light fade-in">
+              <i class="bi bi-pen"></i> Rewriting the Future Together
+            </h4>
+            <p
+              class="revolution-reimagined-text fs-6 fw-light lh-base letter-spacing-md textclamp"
+            >
               Step into the forefront of history as we rewrite the narrative of
               the future. The story of the Blue Revolution is one of resilience,
               defiance, unwavering determinatio. A testament to the power of
               collective action and the indomitable spirit of the human heart.
-              <br /><br />
               From the streets to the corridors of power, our revolution echoes
               across every corner of the globe, inspiring millions to rise up
-              and challenge the status quo. Together, we stand as pioneers of
-              change, united by our shared vision of a world painted blue, a
-              world where possibility knows no bounds and the future is ours to
-              shape.
-              <br /><br />
-              <h4 class="fw-light fade-in"><i class="bi bi-palette"></i> More Than Art: A Call to Action</h4>
+              and challenge the status quo.
+            </p>
+            <button
+              class="btn btn-sm mediumButton btnReadMore mb-3"
+              onclick="readMore(this)"
+            >
+              Read More
+            </button>
+
+            <h4 class="fw-light fade-in">
+              <i class="bi bi-palette"></i> More Than Art: A Call to Action
+            </h4>
+            <p
+              class="revolution-reimagined-text fs-6 fw-light lh-base letter-spacing-md textclamp"
+            >
               This is not just an art revolution, it is a call to action, a
               collective awakening that urges us to reimagine our world, to see
               it not in shades of grey, but in the vibrant and limitless
               spectrum of blue. In this new world, the barriers between the
               possible and the impossible dissolve, leaving us with a blank
               canvas where the only limits are those we impose upon ourselves.
-              In this boundless realm, creativity becomes our compass, guiding us toward a future where imagination reigns supreme. Together, we can craft a world where every brushstroke counts, and every vision has the power to transform reality.
-              <br /><br />
-              <h4 class="fw-light fade-in"><i class="bi bi-person-walking"></i> A Movement for Everyone</h4>
+              In this boundless realm, creativity becomes our compass, guiding
+              us toward a future where imagination reigns supreme. Together, we
+              can craft a world where every brushstroke counts, and every vision
+              has the power to transform reality.
+            </p>
+            <button
+              class="btn btn-sm mediumButton mb-3"
+              onclick="readMore(this)"
+            >
+              Read More
+            </button>
+            <h4 class="fw-light fade-in">
+              <i class="bi bi-person-walking"></i> A Movement for Everyone
+            </h4>
+            <p
+              class="revolution-reimagined-text fs-6 fw-light lh-base letter-spacing-md textclamp"
+            >
               As we march forward, every stroke of blue becomes a symbol of our
               resilience, our courage, and our shared humanity. The Blue
               Revolution is not just a moment—it is a movement, a wave of change
@@ -105,6 +135,9 @@
               to contribute to a collective masterpiece that reflects our
               deepest hopes, dreams, and aspirations.
             </p>
+            <button class="btn btn-sm mediumButton" onclick="readMore(this)">
+              Read More
+            </button>
           </div>
         </div>
       </section>
@@ -137,7 +170,9 @@
         <div class="tab-content">
           <!-- EMOTIONS TAB CONTENT -->
           <div class="tab-pane active p-0 p-md-4" id="emotions">
-            <div class="row border g-0 shadow-sm d-flex flex-column-reverse flex-md-row">
+            <div
+              class="row border g-0 shadow-sm d-flex flex-column-reverse flex-md-row"
+            >
               <div
                 class="col p-3 p-md-5 d-flex flex-column justify-content-center align-items-center align-items-md-start fade-in"
               >
@@ -147,9 +182,14 @@
                   of blue. <br />Each shade ignites a fire within, fueling
                   passion, determination, and unwavering resolve.
                 </p>
-                <button class="btn btn-md mediumButton text-uppercase mt-3 fs-6" data-bs-toggle="modal" data-bs-target="#revolutionModal" data-bs-whatever="@mdo">
-                    join the revolution!
-              </button>
+                <button
+                  class="btn btn-md mediumButton text-uppercase mt-3 fs-6"
+                  data-bs-toggle="modal"
+                  data-bs-target="#revolutionModal"
+                  data-bs-whatever="@mdo"
+                >
+                  join the revolution!
+                </button>
               </div>
               <div class="col-auto p-4">
                 <img
@@ -162,7 +202,9 @@
           </div>
           <!-- CREATIVITY TAB CONTENT -->
           <div class="tab-pane p-0 p-md-4" id="creativity">
-            <div class="row border g-0 shadow-sm d-flex flex-column-reverse flex-md-row">
+            <div
+              class="row border g-0 shadow-sm d-flex flex-column-reverse flex-md-row"
+            >
               <div
                 class="col p-3 p-md-5 d-flex flex-column justify-content-center align-items-center align-items-md-start fade-in"
               >
@@ -173,9 +215,14 @@
                   creativity knows no bounds, paving the way for groundbreaking
                   ideas and visionary endeavors.
                 </p>
-                <button class="btn btn-md mediumButton text-uppercase mt-3 fs-6" data-bs-toggle="modal" data-bs-target="#revolutionModal" data-bs-whatever="@mdo">
-                    join the revolution!
-                  </button>
+                <button
+                  class="btn btn-md mediumButton text-uppercase mt-3 fs-6"
+                  data-bs-toggle="modal"
+                  data-bs-target="#revolutionModal"
+                  data-bs-whatever="@mdo"
+                >
+                  join the revolution!
+                </button>
               </div>
               <div class="col-auto p-4">
                 <img
@@ -188,7 +235,9 @@
           </div>
           <!-- PURPOSE TAB CONTENT -->
           <div class="tab-pane p-0 p-md-4" id="purpose">
-            <div class="row border g-0 shadow-sm d-flex flex-column-reverse flex-md-row">
+            <div
+              class="row border g-0 shadow-sm d-flex flex-column-reverse flex-md-row"
+            >
               <div
                 class="col p-3 p-md-5 d-flex flex-column justify-content-start align-items-center align-items-md-start fade-in"
               >
@@ -200,9 +249,14 @@
                   innovation, or advocating for social justice, find your voice
                   and ignite change on a global scale.
                 </p>
-                <button class="btn btn-md mediumButton text-uppercase mt-3 fs-6" data-bs-toggle="modal" data-bs-target="#revolutionModal" data-bs-whatever="@mdo">
-                    join the revolution!
-                  </button>
+                <button
+                  class="btn btn-md mediumButton text-uppercase mt-3 fs-6"
+                  data-bs-toggle="modal"
+                  data-bs-target="#revolutionModal"
+                  data-bs-whatever="@mdo"
+                >
+                  join the revolution!
+                </button>
               </div>
               <div class="col-auto p-4">
                 <img
@@ -217,243 +271,476 @@
       <!-- Our Purpose here -->
       <section class="ourpurpose text-center text-md-start pb-5 fade-in">
         <div class="container">
-          <h2 class="display-3 text-uppercase fw-medium my-5 pt-5 fade-in-left">Our Purpose</h2>
-          <p class="fs-6 ourpurpose-text ps-3 fw-normal letter-spacing-md col-12 col-md-4 fade-in-left">
+          <h2 class="display-3 text-uppercase fw-medium my-5 pt-5 fade-in-left">
+            Our Purpose
+          </h2>
+          <p
+            class="fs-6 ourpurpose-text ps-3 fw-normal letter-spacing-md col-12 col-md-4 fade-in-left"
+          >
             At the heart of the Blue Revolution lies a singular purpose: to
             redefine the boundaries of possibility and inspire a world driven by
-            innovation, creativity, and compassion. <br><br>We are committed to empowering
-            individuals to embrace their unique talents and passions, harnessing
-            the transformative power of blue to create a brighter, bluer future
-            for generations to come.
+            innovation, creativity, and compassion. <br /><br />We are committed
+            to empowering individuals to embrace their unique talents and
+            passions, harnessing the transformative power of blue to create a
+            brighter, bluer future for generations to come.
           </p>
         </div>
       </section>
       <!-- Ignite the Torches here -->
-       <section class="ignite py-5 text-center text-md-start fade-in">
-        <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center">
-            <div class="col-12 col-lg-6">
-              <h2 class="display-3 text-uppercase fw-medium my-5">
-                ignite the torches!
-              </h2>
-              <p class="fs-4 letter-spacing-md">The Blue Revolution emerges as a beacon of innovation and progress. Days of conformity are gone!</p>
-              <button class="btn btn-md mediumButton text-uppercase mt-3 fs-5" data-bs-toggle="modal" data-bs-target="#revolutionModal" data-bs-whatever="@mdo">
-                join the revolution!
-              </button>
-            </div>
-            <div class="col-6 align-self-center align-self-lg-end d-none d-lg-block">
-              <img class="mt-4 mt-md-0 fade-in-right img-fluid igniteImg" src="src/images/no_bg/scene-professional-esports-gamer-profile-colored-with-red-blue-light-generative-ai.webp" alt="Blue Rev Protestant Sidelook portrait">
-            </div>
-          </div>
-      
-       </section>
-       <!-- Path of Change -->
-        <section class="path-of-change py-5 gradientbg">
-          <div class="container">
-            <h2 class="display-3 text-uppercase fw-medium my-5 text-center pb-5 position-relative fade-in">
-              path of change
+      <section class="ignite py-5 text-center text-md-start fade-in">
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-center align-items-center"
+        >
+          <div class="col-12 col-lg-6">
+            <h2 class="display-3 text-uppercase fw-medium my-5">
+              ignite the torches!
             </h2>
-            
-            <div class="d-flex flex-column flex-md-row justify-content-between">
-              <!-- LEFT SIDE-->
-              <div class="col-12 col-md-5">
-                <!-- The Awakening -->
-                <div class="card mb-5 px-3 pb-4 fade-in-left">
-                  <div class="card-body">
-                    <span class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md">- year 2030 -</span>
-                    <h5 class="card-title display-6 letter-spacing-md fw-normal mb-3">The Awakening</h5>
-                    <p class="card-text letter-spacing-md">The seed of the Blue Revolution is planted as individuals around the world begin to question societal norms and envision a future filled with innovation and creativity.</p>
-                  </div>
-                </div>
-                <!-- PLACEHOLDER -->
-                <div class="d-none d-md-block" style="height: 15rem;"></div>
-                <!-- Blue Day -->
-                <div class="card mb-5 px-3 pb-4 fade-in-left">
-                  <div class="card-body">
-                    <span class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md">- year 2033 -</span>
-                    <h5 class="card-title display-6 letter-spacing-md fw-normal mb-3">Blue Day</h5>
-                    <p class="card-text letter-spacing-md">The Blue Day is celebrated, marking a day of unity, inspiration, and action. Events are held in cities across the globe. VIVA LA REVOLUCIÓN!</p>
-                  </div>
-                </div>
-                <!-- PLACEHOLDER -->
-                <div class="d-none d-md-block" style="height: 15rem;"></div>
-                <!-- FOR JUSTICE! -->
-                <div class="card mb-5 px-3 pb-4 fade-in-left">
-                  <div class="card-body">
-                    <span class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md">- year 2037 -</span>
-                    <h5 class="card-title display-6 letter-spacing-md fw-normal mb-3">For Justice!</h5>
-                    <p class="card-text letter-spacing-md">The Revolution expands its focus with social justice issues, advocating for equality, diversity, and inclusion. Revolutionaries unite to challenge systemic injustices and create a more equitable society for all.</p>
-                  </div>
-                </div>
-                <!-- PLACEHOLDER -->
-                <div class="d-none d-md-block" style="height: 15rem;"></div>
-                <!-- BLUE UTOPIA -->
-                <div class="card mb-5 px-3 pb-4 fade-in-left">
-                  <div class="card-body">
-                    <span class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md">- year 2040 -</span>
-                    <h5 class="card-title display-6 letter-spacing-md fw-normal mb-3">Blue Utopia</h5>
-                    <p class="card-text letter-spacing-md">Our vision begins to materialize. A world filled with creativity, sustainability, and compassion becomes a reality, paving the way for a brighter, bluer future for all.</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Middle -->
-              <div class="col-auto d-none d-md-block">
-                <hr class="path-of-change-hr"/>
-              </div>
-
-              <!-- Right Side -->
-              <div class="col-12 col-md-5">
-                 <!-- PLACEHOLDER -->
-                <div class="d-none d-md-block" style="height: 15rem;"></div>
-                <!-- Genesis -->
-                <div class="card mb-5 px-3 pb-4 fade-in-right">
-                  <div class="card-body">
-                    <span class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md">- year 2032 -</span>
-                    <h5 class="card-title display-6 letter-spacing-md fw-normal mb-3">Genesis</h5>
-                    <p class="card-text letter-spacing-md">The first Blue Revolution takes place, bringing together visionaries, artists, and activists to discuss the potential of a blue-centric lifestyle. The movement gains momentum.</p>
-                  </div>
-                </div>
-                <!-- PLACEHOLDER -->
-                <div class="d-none d-md-block" style="height: 15rem;"></div>
-                <!-- RENAISSANCE -->
-                <div class="card mb-5 px-3 pb-4 fade-in-right">
-                  <div class="card-body">
-                    <span class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md">- year 2035 -</span>
-                    <h5 class="card-title display-6 letter-spacing-md fw-normal mb-3">Renaissance</h5>
-                    <p class="card-text letter-spacing-md">A cultural renaissance emerges. Artists, musicians, and writers embracing the color blue as a symbol of creativity and expression. Blue-themed works of art captivate audiences worldwide.</p>
-                  </div>
-                </div>
-                <!-- PLACEHOLDER -->
-                <div class="d-none d-md-block" style="height: 15rem;"></div>
-                <!-- GLOBAL ACTION -->
-                <div class="card mb-5 px-3 pb-4 fade-in-right">
-                  <div class="card-body">
-                    <span class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md">- year 2038 -</span>
-                    <h5 class="card-title display-6 letter-spacing-md fw-normal mb-3">Global Action</h5>
-                    <p class="card-text letter-spacing-md">International collaborations flourish as the Blue Revolution gains recognition on a global scale. Governments and corporations join forces to address pressing challenges and implement innovative solutions.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p class="fs-4 letter-spacing-md">
+              The Blue Revolution emerges as a beacon of innovation and
+              progress. Days of conformity are gone!
+            </p>
+            <button
+              class="btn btn-md mediumButton text-uppercase mt-3 fs-5"
+              data-bs-toggle="modal"
+              data-bs-target="#revolutionModal"
+              data-bs-whatever="@mdo"
+            >
+              join the revolution!
+            </button>
           </div>
-        </section>
-        <!-- CTA -->
-        <div class="cta gradientbg fade-in">
-            <div class="p-5">
-              <div class="container d-flex flex-column flex-md-row justify-content-between align-items-start">
-
-                <div class="blockquote-left col-12 col-md-6">
-                  <figure>
-                    <blockquote class="blockquote">
-                      <p class="fs-3">In every revolution there is one element that remains constant: the power of change.</p>
-                    </blockquote>
-                    <figcaption class="blockquote-footer fs-6">
-                      Unknown
-                    </figcaption>
-                  </figure>
-                </div>
-
-                  <div class="blockquote-right">
-                      <button class="btn btn-md mediumButton cta-btn text-uppercase mt-2 fs-3" data-bs-toggle="modal" data-bs-target="#revolutionModal" data-bs-whatever="@mdo">
-                      I WANT TO JOIN!</button>
-                  </div>
-
-              </div>
-            </div>     
+          <div
+            class="col-6 align-self-center align-self-lg-end d-none d-lg-block"
+          >
+            <img
+              class="mt-4 mt-md-0 fade-in-right img-fluid igniteImg"
+              src="src/images/no_bg/scene-professional-esports-gamer-profile-colored-with-red-blue-light-generative-ai.webp"
+              alt="Blue Rev Protestant Sidelook portrait"
+            />
+          </div>
         </div>
-        <!-- Slider Section -->
-         <section class="slider-section fade-in">
-          <div class="container pb-4">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade py-5 mt-5 fade-in-left">
-              <div class="carousel-inner">
-                
-                <div class="carousel-item">
-                  <img src="src/images/gallery_images/blue_woman_rain.webp" class="d-block w-100 slider-img" loading="lazy" alt="Woman standing in the rain, blue style">
-                </div>
-                <div class="carousel-item">
-                  <img src="src/images/gallery_images/gallery_1.webp" class="d-block w-100 slider-img" loading="lazy" alt="2 blue painted women laying next to each other">
-                </div>
-                <div class="carousel-item active">
-                  <img src="src/images/gallery_images/people-with-gothic-style-costumes-make-up-performing-drama-world-theatre-day.webp" loading="lazy" class="d-block w-100 slider-img" alt="Group of People - Blue Theatre">
-                </div>
-                <div class="carousel-item">
-                  <img src="src/images/gallery_images/female-soccer-fan-with-painted-face.webp" loading="lazy" class="d-block w-100 slider-img" alt="Blue Stripe-painted woman shouting">
-                </div>
-                <div class="carousel-item">
-                  <img src="src/images/gallery_images/blue_woman_oneeye.webp" loading="lazy" class="d-block w-100 slider-img" alt="Blue Painted woman hides her left eye">
-                </div>
-                <div class="carousel-item">
-                  <img src="src/images/gallery_images/portrait-soccer-game-fan-enjoying-match.webp" loading="lazy" class="d-block w-100 slider-img" alt="Blue Stripe-painted woman shouting">
+      </section>
+      <!-- Path of Change -->
+      <section class="path-of-change py-5 gradientbg">
+        <div class="container">
+          <h2
+            class="display-3 text-uppercase fw-medium my-5 text-center pb-5 position-relative fade-in"
+          >
+            path of change
+          </h2>
+
+          <div class="d-flex flex-column flex-md-row justify-content-between">
+            <!-- LEFT SIDE-->
+            <div class="col-12 col-md-5">
+              <!-- The Awakening -->
+              <div class="card mb-5 px-3 pb-4 fade-in-left">
+                <div class="card-body">
+                  <span
+                    class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md"
+                    >- year 2030 -</span
+                  >
+                  <h5
+                    class="card-title display-6 letter-spacing-md fw-normal mb-3"
+                  >
+                    The Awakening
+                  </h5>
+                  <p class="card-text letter-spacing-md">
+                    The seed of the Blue Revolution is planted as individuals
+                    around the world begin to question societal norms and
+                    envision a future filled with innovation and creativity.
+                  </p>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <!-- PLACEHOLDER -->
+              <div class="d-none d-md-block" style="height: 15rem"></div>
+              <!-- Blue Day -->
+              <div class="card mb-5 px-3 pb-4 fade-in-left">
+                <div class="card-body">
+                  <span
+                    class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md"
+                    >- year 2033 -</span
+                  >
+                  <h5
+                    class="card-title display-6 letter-spacing-md fw-normal mb-3"
+                  >
+                    Blue Day
+                  </h5>
+                  <p class="card-text letter-spacing-md">
+                    The Blue Day is celebrated, marking a day of unity,
+                    inspiration, and action. Events are held in cities across
+                    the globe. VIVA LA REVOLUCIÓN!
+                  </p>
+                </div>
+              </div>
+              <!-- PLACEHOLDER -->
+              <div class="d-none d-md-block" style="height: 15rem"></div>
+              <!-- FOR JUSTICE! -->
+              <div class="card mb-5 px-3 pb-4 fade-in-left">
+                <div class="card-body">
+                  <span
+                    class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md"
+                    >- year 2037 -</span
+                  >
+                  <h5
+                    class="card-title display-6 letter-spacing-md fw-normal mb-3"
+                  >
+                    For Justice!
+                  </h5>
+                  <p class="card-text letter-spacing-md">
+                    The Revolution expands its focus with social justice issues,
+                    advocating for equality, diversity, and inclusion.
+                    Revolutionaries unite to challenge systemic injustices and
+                    create a more equitable society for all.
+                  </p>
+                </div>
+              </div>
+              <!-- PLACEHOLDER -->
+              <div class="d-none d-md-block" style="height: 15rem"></div>
+              <!-- BLUE UTOPIA -->
+              <div class="card mb-5 px-3 pb-4 fade-in-left">
+                <div class="card-body">
+                  <span
+                    class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md"
+                    >- year 2040 -</span
+                  >
+                  <h5
+                    class="card-title display-6 letter-spacing-md fw-normal mb-3"
+                  >
+                    Blue Utopia
+                  </h5>
+                  <p class="card-text letter-spacing-md">
+                    Our vision begins to materialize. A world filled with
+                    creativity, sustainability, and compassion becomes a
+                    reality, paving the way for a brighter, bluer future for
+                    all.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="joinlast text-center fade-in">
-              <h2 class="display-3 fw-normal">JOIN THE BLUE VANGUARD!</h2>
-              <p class="my-4 fs-5">Ready to be part of something bigger than yourself? </p>
-              <button class="btn btn-md mediumButton text-uppercase fs-5 mb-5" data-bs-toggle="modal" data-bs-target="#revolutionModal" data-bs-whatever="@mdo">
-                HELL YEAH!
+
+            <!-- Middle -->
+            <div class="col-auto d-none d-md-block">
+              <hr class="path-of-change-hr" />
+            </div>
+
+            <!-- Right Side -->
+            <div class="col-12 col-md-5">
+              <!-- PLACEHOLDER -->
+              <div class="d-none d-md-block" style="height: 15rem"></div>
+              <!-- Genesis -->
+              <div class="card mb-5 px-3 pb-4 fade-in-right">
+                <div class="card-body">
+                  <span
+                    class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md"
+                    >- year 2032 -</span
+                  >
+                  <h5
+                    class="card-title display-6 letter-spacing-md fw-normal mb-3"
+                  >
+                    Genesis
+                  </h5>
+                  <p class="card-text letter-spacing-md">
+                    The first Blue Revolution takes place, bringing together
+                    visionaries, artists, and activists to discuss the potential
+                    of a blue-centric lifestyle. The movement gains momentum.
+                  </p>
+                </div>
+              </div>
+              <!-- PLACEHOLDER -->
+              <div class="d-none d-md-block" style="height: 15rem"></div>
+              <!-- RENAISSANCE -->
+              <div class="card mb-5 px-3 pb-4 fade-in-right">
+                <div class="card-body">
+                  <span
+                    class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md"
+                    >- year 2035 -</span
+                  >
+                  <h5
+                    class="card-title display-6 letter-spacing-md fw-normal mb-3"
+                  >
+                    Renaissance
+                  </h5>
+                  <p class="card-text letter-spacing-md">
+                    A cultural renaissance emerges. Artists, musicians, and
+                    writers embracing the color blue as a symbol of creativity
+                    and expression. Blue-themed works of art captivate audiences
+                    worldwide.
+                  </p>
+                </div>
+              </div>
+              <!-- PLACEHOLDER -->
+              <div class="d-none d-md-block" style="height: 15rem"></div>
+              <!-- GLOBAL ACTION -->
+              <div class="card mb-5 px-3 pb-4 fade-in-right">
+                <div class="card-body">
+                  <span
+                    class="text-uppercase fs-6 fst-italic fw-light opacity-50 letter-spacing-md"
+                    >- year 2038 -</span
+                  >
+                  <h5
+                    class="card-title display-6 letter-spacing-md fw-normal mb-3"
+                  >
+                    Global Action
+                  </h5>
+                  <p class="card-text letter-spacing-md">
+                    International collaborations flourish as the Blue Revolution
+                    gains recognition on a global scale. Governments and
+                    corporations join forces to address pressing challenges and
+                    implement innovative solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA -->
+      <div class="cta gradientbg fade-in">
+        <div class="p-5">
+          <div
+            class="container d-flex flex-column flex-md-row justify-content-between align-items-start"
+          >
+            <div class="blockquote-left col-12 col-md-6">
+              <figure>
+                <blockquote class="blockquote">
+                  <p class="fs-3">
+                    In every revolution there is one element that remains
+                    constant: the power of change.
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer fs-6">Unknown</figcaption>
+              </figure>
+            </div>
+
+            <div class="blockquote-right">
+              <button
+                class="btn btn-md mediumButton cta-btn text-uppercase mt-2 fs-3"
+                data-bs-toggle="modal"
+                data-bs-target="#revolutionModal"
+                data-bs-whatever="@mdo"
+              >
+                I WANT TO JOIN!
               </button>
             </div>
           </div>
-         </section>
-
+        </div>
+      </div>
+      <!-- Slider Section -->
+      <section class="slider-section fade-in">
+        <div class="container pb-4">
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade py-5 mt-5 fade-in-left"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img
+                  src="src/images/gallery_images/blue_woman_rain.webp"
+                  class="d-block w-100 slider-img"
+                  loading="lazy"
+                  alt="Woman standing in the rain, blue style"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="src/images/gallery_images/gallery_1.webp"
+                  class="d-block w-100 slider-img"
+                  loading="lazy"
+                  alt="2 blue painted women laying next to each other"
+                />
+              </div>
+              <div class="carousel-item active">
+                <img
+                  src="src/images/gallery_images/people-with-gothic-style-costumes-make-up-performing-drama-world-theatre-day.webp"
+                  loading="lazy"
+                  class="d-block w-100 slider-img"
+                  alt="Group of People - Blue Theatre"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="src/images/gallery_images/female-soccer-fan-with-painted-face.webp"
+                  loading="lazy"
+                  class="d-block w-100 slider-img"
+                  alt="Blue Stripe-painted woman shouting"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="src/images/gallery_images/blue_woman_oneeye.webp"
+                  loading="lazy"
+                  class="d-block w-100 slider-img"
+                  alt="Blue Painted woman hides her left eye"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="src/images/gallery_images/portrait-soccer-game-fan-enjoying-match.webp"
+                  loading="lazy"
+                  class="d-block w-100 slider-img"
+                  alt="Blue Stripe-painted woman shouting"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="joinlast fade-in text-center">
+            <h2 class="display-3 fw-normal">JOIN OUR CAUSE!</h2>
+            <p class="my-4 fs-5">
+              Ready to be part of something bigger than yourself?
+            </p>
+            <button
+              class="btn btn-md mediumButton text-uppercase fs-5 mb-5"
+              data-bs-toggle="modal"
+              data-bs-target="#revolutionModal"
+              data-bs-whatever="@mdo"
+            >
+              HELL YEAH!
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- FOOTER -->
     <footer class="footer text-center p-4 align-middle gradientbg border-top">
-      <p class="m-0 p-0">Made with &hearts; by <a href="https://github.com/szakidani23" target="_blank">Daniel Szakaly</a> &copy; <script>document.write( new Date().getFullYear() );</script> Copyright: <a href="https://danielszakaly.hu" target="_blank">danielszakaly.hu</a></p>
+      <p class="m-0 p-0">
+        Made with &hearts; by
+        <a href="https://github.com/szakidani23" target="_blank"
+          >Daniel Szakaly</a
+        >
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Copyright:
+        <a href="https://danielszakaly.hu" target="_blank">danielszakaly.hu</a>
+      </p>
     </footer>
     <!-- MODAL MAIN -->
-    <div class="modal fade" id="revolutionModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div
+      class="modal fade"
+      id="revolutionModal"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content gradientbgModal">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Walk on the True Path!</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+              Walk on the True Path!
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <form id="revolutionForm">
               <div class="mb-3">
-                <label for="recipient-email" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="recipient-email" placeholder="johndoe@iwannabeblue.com" required>
+                <label for="recipient-email" class="col-form-label"
+                  >Email:</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="recipient-email"
+                  placeholder="johndoe@iwannabeblue.com"
+                  required
+                />
               </div>
               <div class="mb-3">
-                <label for="message-text" class="col-form-label">Secret Code:</label>
-                <textarea class="form-control" id="message-text" required></textarea>
+                <label for="message-text" class="col-form-label"
+                  >Secret Code:</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message-text"
+                  required
+                ></textarea>
               </div>
             </form>
           </div>
-          <div class="modal-footer d-flex justify-content-center justify-content-sm-start flex-column-reverse flex-sm-row">
-            <button type="button" class="btn btn-secondary fw-light" data-bs-dismiss="modal">I don't want to be special.</button>
-            <button type="submit" class="btn btn-primary fw-normal" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">LETS BE COOL!</button>
+          <div
+            class="modal-footer d-flex justify-content-center justify-content-sm-start flex-column-reverse flex-sm-row"
+          >
+            <button
+              type="button"
+              class="btn btn-secondary fw-light"
+              data-bs-dismiss="modal"
+            >
+              I don't want to be special.
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary fw-normal"
+              data-bs-target="#exampleModalToggle2"
+              data-bs-toggle="modal"
+            >
+              LETS BE COOL!
+            </button>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- MODAL SUCCESS -->
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-success">
           <div class="modal-header">
-            <h1 class="modal-title fs-5 text-uppercase text-light" id="exampleModalToggleLabel2">congratulations! <i class="bi bi-trophy"></i></h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1
+              class="modal-title fs-5 text-uppercase text-light"
+              id="exampleModalToggleLabel2"
+            >
+              congratulations! <i class="bi bi-trophy"></i>
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
-            YOU HAVE JUST MADE THE BEST CHOICE OF YOUR LIFE! <i class="bi bi-emoji-sunglasses-fill"></i><br>
+            YOU HAVE JUST MADE THE BEST CHOICE OF YOUR LIFE!
+            <i class="bi bi-emoji-sunglasses-fill"></i><br />
             Be patient, you will receive all the details in email soon!
           </div>
         </div>
       </div>
     </div>
-   
+
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -463,7 +750,7 @@
     <!-- ThreeJS, VantaJS for background -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"></script>
-    <script src="intersection.js"></script>
+    <script src="functions.js"></script>
     <script type="text/javascript">
       VANTA.BIRDS({
         el: '#birdsBg',
@@ -480,6 +767,5 @@
         quantity: 3.0,
       });
     </script>
-
   </body>
 </html>
