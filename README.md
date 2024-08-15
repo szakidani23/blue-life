@@ -4,7 +4,7 @@ A futuristic imaginary world where the color blue is the center of life.
 
 Design, code made by me.
 STACK used in the project:
-HTML, CSS, BOOTSTRAP, a bit of JS, AdobeXD, GIT(my commits are lost:O will have to fix it later.).
+HTML, CSS, BOOTSTRAP, a bit of JS, AdobeXD.
 
 Images: https://freepik.com
 
