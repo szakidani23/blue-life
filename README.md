@@ -3,8 +3,8 @@
 A futuristic imaginary world where the color blue is the center of life.
 
 Design, code made by me.
-STACK used in the project:
-HTML, CSS, BOOTSTRAP, a bit of JS, AdobeXD.
+Stack used in the project:
+HTML, CSS, BOOTSTRAP, JS, AdobeXD. 
 
 Images: https://freepik.com
 
