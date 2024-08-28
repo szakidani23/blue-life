@@ -1,0 +1,205 @@
+/* CUSTOM CSS CODES - FROM SECTION TO SECTION */
+
+/* HERO */
+@media (max-width: 800px) {
+  .small-screen-height {
+    max-height: 70vh;
+  }
+}
+
+/* REVOLUTION IMAGINED SECTION */
+.revolution-img {
+  max-width: 100%;
+}
+
+.revolution-reimagined-text {
+  transition: all 0.16s ease;
+}
+
+.btnReadMore {
+  display: none;
+}
+
+.textclamp {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+@media screen and (max-width: 800px) {
+  .textclamp {
+    display: -webkit-box;
+  }
+
+  .btnReadMore {
+    display: block;
+  }
+}
+/* Is It Cool To Be Blue? SECTION */
+.dimension {
+  max-width: 500px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .dimension {
+    max-width: 100%;
+  }
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--maincolor);
+  color: var(--whitecolor);
+  border: 3px solid var(--maincolor);
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  color: var(--whitecolor);
+  font-family: 'Exo 2', sans-serif;
+  border-radius: 0;
+  padding: 20px 35px;
+}
+
+.nav-tabs .nav-link:hover {
+  border: 2px solid var(--maincolor);
+  border-bottom: 0;
+}
+
+.tab-content {
+  border: 1px solid var(--maincolor);
+  padding: 10px;
+}
+
+/* Our Purpose */
+.ourpurpose {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../src/images/gallery_images/blue_facepaint.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.ourpurpose-text {
+  border-left: 4px solid var(--maincolor);
+}
+
+/* Ignite The Torches */
+.ignite {
+  background-image: linear-gradient(to bottom, #020b0f 0%, #043852ea 100%),
+    url(../src/images/no_bg/blue_smoke.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.igniteImg {
+  mix-blend-mode: screen;
+  opacity: 0.5;
+  transition: all 0.16s ease-in;
+}
+.igniteImg:hover {
+  filter: contrast(150%);
+}
+
+/* Path of Change */
+.path-of-change {
+  position: relative;
+}
+
+.path-of-change-hr {
+  width: 5px;
+  height: 100%;
+  margin: 0 auto;
+  border: 0;
+  background: linear-gradient(rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 0%)
+    0 0/100% 150px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+
+.card {
+  background: transparent;
+  border: 1px solid var(--maincolor);
+  border-radius: 0;
+  box-shadow: 3px 3px 10px 0px rgb(0, 167, 251);
+}
+
+.card:hover {
+  background: #00a7fb2c;
+  box-shadow: none;
+}
+
+.card span,
+.card h5 {
+  color: var(--maincolor);
+}
+
+/* CTA */
+.cta-btn {
+  background-color: var(--maincolor);
+  color: var(--whitecolor) !important;
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 16px -4px rgba(0, 166, 251, 1);
+}
+
+.cta-btn:hover {
+  transform: scale(1.05) !important;
+}
+
+/* Slider Section */
+.carousel-inner {
+  max-height: 38rem;
+  border-radius: 8.5rem;
+}
+
+@media screen and (max-width: 680px) {
+  .carousel-inner {
+    border-radius: 5rem;
+    max-height: 20rem;
+  }
+}
+.slider-img {
+  object-fit: cover !important;
+  width: auto;
+  aspect-ratio: 1/1;
+  height: 100%;
+  max-height: 50rem;
+}
+
+/* Footer */
+footer a,
+footer a:visited {
+  text-decoration: none;
+  color: var(--maincolor);
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+/* UP BTN */
+.stickyBtn {
+  display: none;
+  padding: 0.6rem;
+  background: var(--maincolor);
+  right: 1rem;
+  color: var(--textcolor);
+}
+
+@media screen and (max-width: 800px) {
+  .stickyBtn {
+    display: block;
+    z-index: 999;
+  }
+}
+
+.stickyBtn:hover {
+  background: var(--maincolor);
+  opacity: 0.75;
+  color: var(--textcolor);
+}
